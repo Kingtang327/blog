@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
-actionText: 感受精彩 →
+actionText: 开启学习 →
 actionLink: ../java/
 features:
 - title: Java
