@@ -6,18 +6,29 @@ module.exports = ctx => ({
     description: 'Java学习之路',
     base: '/',
     themeConfig: {
-        repo: 'vuejs/vuepress',
-        editLinks: true,
+        repo: '/Kingtang327/blog',
+        // editLinks: true,
         docsDir: 'packages/docs/docs',
         smoothScroll: true,
         label: '简体中文',
         selectText: '选择语言',
         ariaLabel: '选择语言',
-        editLinkText: '在 GitHub 上编辑此页',
+        // editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新',
         nav: require('./nav/nav'),
         sidebar: {
-            'java': getGuideSidebar('资源获取', '快速开始', '面试资料')
+            '/':'',
+            '/java/concurrent/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/docker/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/dubbo/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/jvm/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/mongodb/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/mq/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/mybatis/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/mysql/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/netty/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/redis/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
+            '/java/spring/': getCommonSidebar('资源获取', '快速开始', '面试资料')
         },
         sidebarDepth: 2, // 侧边栏显示2级
         extraWatchFiles: [
@@ -26,14 +37,13 @@ module.exports = ctx => ({
     }
 })
 
-function getGuideSidebar (groupA, groupB, groupC) {
+function getCommonSidebar (groupA, groupB, groupC) {
     return [
         {
             title: groupA,
             collapsable: false,
             sidebarDepth: 2,
             children: [
-                '',
                 'resources'
             ]
         },
