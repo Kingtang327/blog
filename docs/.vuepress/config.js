@@ -1,12 +1,12 @@
 // const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
-    dest: '../../vuepress',
+    dest: '../../blog',
     title: 'Java学习之路',
     description: 'Java学习之路',
-    base: '/',
+    base: '/blog/',
     themeConfig: {
-        repo: '/Kingtang327/blog',
+        // repo: '/Kingtang327/blog',
         // editLinks: true,
         docsDir: 'packages/docs/docs',
         smoothScroll: true,
@@ -17,7 +17,6 @@ module.exports = ctx => ({
         lastUpdated: '上次更新',
         nav: require('./nav/nav'),
         sidebar: {
-            '/':'',
             '/java/concurrent/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
             '/java/docker/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
             '/java/dubbo/': getCommonSidebar('资源获取', '快速开始', '面试资料'),
@@ -44,6 +43,7 @@ function getCommonSidebar (groupA, groupB, groupC) {
             collapsable: false,
             sidebarDepth: 2,
             children: [
+                '',
                 'resources'
             ]
         },
