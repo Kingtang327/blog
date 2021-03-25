@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 开启学习 →
-actionLink: ../java/
+actionLink: ../java/jvm/
 features:
 - title: Java
   details: Java攻城狮一只

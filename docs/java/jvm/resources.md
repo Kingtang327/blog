@@ -1,2 +1,2 @@
 # 资源获取
-## 哈哈
+https://blog.csdn.net/K_Tang
