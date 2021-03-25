@@ -1,12 +1,12 @@
 // const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
-    dest: '../../vuepress',
+    dest: '../../blog',
     title: 'Java学习之路',
     description: 'Java学习之路',
-    base: '/',
+    base: '/blog/',
     themeConfig: {
-        repo: '/Kingtang327/blog',
+        // repo: '/Kingtang327/blog',
         // editLinks: true,
         docsDir: 'packages/docs/docs',
         smoothScroll: true,
